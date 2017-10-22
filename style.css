@@ -1,0 +1,61 @@
+body {
+  background-color: #00AA20;
+  color: #00AA20;
+}
+
+.container {
+  width: 60%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  padding: 1em;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+
+.quoteWrapper, .quoteFooter {
+  margin: 1em;
+}
+
+
+.quoteIcon {
+  display: inline;
+}
+
+#quote {
+  display: inline;
+}
+
+.quoteFooter{
+  display: grid;
+}
+
+.iconsList{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 0;
+  margin: 5% 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0;
+}
+
+.quoteFooter button {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  padding: 0;
+  margin: 5% 0;
+  color: white;
+  background-color: #00AA20;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.icon {
+  margin: 0;
+  background-color: white;
+}
+
+li {
+  list-style-type: none;
+}
