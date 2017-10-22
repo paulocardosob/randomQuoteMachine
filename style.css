@@ -3,6 +3,10 @@ body {
   color: #00AA20;
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   width: 60%;
   position: absolute;
@@ -24,6 +28,7 @@ body {
 
 #quote {
   display: inline;
+  font-size: 1.25em;
 }
 
 .quoteFooter{

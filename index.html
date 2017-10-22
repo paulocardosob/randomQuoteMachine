@@ -4,9 +4,12 @@
   <head>
     <title>Random Quote Machine - Paulo Jose</title>
     <meta charset="utf-8" />
-    <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./jquery-ui.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    <script src="./jquery-ui.min.js"></script>
     <script src="https://use.fontawesome.com/809cd40efb.js"></script>
-    <link rel="stylesheet" href="./style.css"
+
   </head>
   <body>
     <section class="container">
@@ -20,15 +23,19 @@
       </div>
       <div class="quoteFooter">
         <ul class="iconsList">
-          <li>
-            <i class="fa fa-twitter-square fa-3x icon" aria-hidden="true"></i>
-          </li>
+          <a id="twitterIconAnchor" target="_blank">
+            <li class="twitterIcon">
+              <i class="fa fa-twitter-square fa-3x icon" aria-hidden="true"></i>
+            </li>
+          </a>
           <li>
             <i class="fa fa-tumblr-square fa-3x icon" aria-hidden="true"></i>
           </li>
         </ul>
-        <button>New Quote</button>
+        <button onclick="getQuote()">New Quote</button>
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
